@@ -14,18 +14,18 @@
         android:id="@+id/inputEmail"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:layout_marginTop="212dp"
+        android:layout_marginTop="150dp"
         android:gravity="center_horizontal|center_vertical"
         android:hint="email"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/inputPassword"
+        app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp" />
 
     <EditText
         android:id="@+id/inputPassword"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="10dp"
         android:hint="Password"
         app:layout_constraintBottom_toTopOf="@+id/progressBar"
         app:layout_constraintTop_toBottomOf="@+id/inputEmail"
@@ -35,7 +35,7 @@
         android:id="@+id/progressBar"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/buttonSignIn"
         app:layout_constraintTop_toBottomOf="@+id/inputPassword"
@@ -47,17 +47,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SIGN IN"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar"
         app:layout_constraintBottom_toTopOf="@+id/textCreateNewAccount"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="504dp" />
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
 
     <TextView
         android:id="@+id/textCreateNewAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
         android:text="Create new account"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

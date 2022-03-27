@@ -56,7 +56,7 @@ public class SignInActivity extends AppCompatActivity {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         db.collection(Constants.KEY_COLLECTION_USERS)
                 .whereEqualTo(Constants.KEY_EMAIL, binding.inputEmail.getText().toString())
-                .whereEqualTo(Constants.KEY_PASSWORD, binding.inputPassword.getText().toString())
+                //.whereEqualTo(Constants.KEY_PASSWORD, binding.inputPassword.getText().toString()) //TODO: for testing purpose, password is no need
                 .get()
                 .addOnCompleteListener(task -> {
                     if(task.isSuccessful() && task.getResult()!=null
@@ -99,8 +99,10 @@ public class SignInActivity extends AppCompatActivity {
             showToast("Enter valid email");
             return false;
         }else if(binding.inputPassword.getText().toString().trim().isEmpty()){
-            showToast("Enter password");
-            return false;
+            //showToast("Enter password");
+            //return false;
+            //showToast("");//TODO: for testing purpose, password is no need
+            return true;
         }else{
             return true;
         }
