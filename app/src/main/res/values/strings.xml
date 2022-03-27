@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SocialApp</string>
+    <string name="type_a_message">Type a message</string>
+    <string name="online">Online</string>
+</resources>
